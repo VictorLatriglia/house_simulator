@@ -16,4 +16,5 @@ screen kitchen_screen:
         xcenter 0.497
         yalign 0.368
         action [Notify("You ate some food! Hunger -20") ,
-            SetVariable("hunger", hunger - 20)]
+            SetVariable("hunger", hunger - 20),
+            Function(advanceTime)]

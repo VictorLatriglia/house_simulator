@@ -17,4 +17,5 @@ screen bathroom_screen:
         xcenter 0.78
         yalign 1
         action [Notify("You took a shower! Hygiene +20") ,
-        SetVariable("hygiene", hygiene + 20)]
+        SetVariable("hygiene", hygiene + 20),
+        Function(advanceTime)]
