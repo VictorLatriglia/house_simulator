@@ -4,6 +4,9 @@ label dream_minigame():
     $ sleep = 0 #sleep variable, increases with each successful qte hit, if it reaches 3, the player wins
     $ timerStart = 1
     $ timerInterval = 0.1
+
+    "Click the Zzz in time to get some sleep! You need to successfully hit the button 3 times to have a good nap and advance time. You have 10 attempts!"
+
     #first attempt, to guarantee at least once
     call qte_setup(renpy.random.randint(1, 9) * 0.1, renpy.random.randint(2, 9) * 0.1)
 

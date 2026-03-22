@@ -15,5 +15,4 @@ screen bedroom_screen:
         hover "images/house/buttons/bedroom/bed_hover.png"
         xalign 0.78
         yalign 0.9
-        action [ Jump("dream_minigame"),
-                Notify("You took a nap! Time advanced to the next time of day.")]
+        action [ Jump("dream_minigame")]

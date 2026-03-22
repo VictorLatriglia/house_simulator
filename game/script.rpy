@@ -22,4 +22,5 @@ define timesOfDay = ["Morning", "Afternoon", "Evening", "Night"]
 
 label start:
     show screen persistent_text
+    play music "audio/main_loop.wav" loop volume 0.5
     jump bedroom
