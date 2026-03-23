@@ -14,11 +14,15 @@ define hunger = 100
 
 define time = "Morning"
 define day = "Monday"
+define tint = "#fff8b6"
 
 define daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 define timesOfDay = ["Morning", "Afternoon", "Evening", "Night"]
 
 # The game starts here.
+
+transform ambient_light:
+    matrixcolor TintMatrix(tint)
 
 label start:
     show screen persistent_text

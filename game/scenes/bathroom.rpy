@@ -1,5 +1,5 @@
 label bathroom:
-    scene bg bathroom
+    show bg bathroom at ambient_light
 
     call screen bathroom_screen
 
@@ -17,5 +17,5 @@ screen bathroom_screen:
         xcenter 0.78
         yalign 1
         action [Notify("You took a shower! Hygiene +20") ,
-        SetVariable("hygiene", hygiene + 20),
-        Function(advanceTime)]
+        SetVariable("hygiene",100 if hygiene + 20 >= 100 else hygiene + 20),
+        Function(advanceTime), Jump("kitchen")]

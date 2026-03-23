@@ -1,6 +1,6 @@
 init python:
     def advanceTime(passDay=False):
-        global time, day
+        global time, day, tint
         currentTimeIndex = timesOfDay.index(time)
         lowerGlobals()
 
@@ -12,10 +12,13 @@ init python:
             time = timesOfDay[currentTimeIndex + 1]
         else:
             nextDay()
+
+        tint = "#7FA5F2" if time == "Night" or time == "Evening" else "#fff8b6"
     
     def nextDay():
-        global time, day
+        global time, day, tint
         time = timesOfDay[0]
+        tint = "#fff8b6"
         currentTimeIndex = timesOfDay.index(time)
         currentDayIndex = daysOfWeek.index(day)
         if currentDayIndex < len(daysOfWeek) - 1:

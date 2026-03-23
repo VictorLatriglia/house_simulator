@@ -1,5 +1,7 @@
+
 label bedroom:
-    scene bg bedroom
+    
+    show bg bedroom at ambient_light #at ambient_light
 
     call screen bedroom_screen
 
