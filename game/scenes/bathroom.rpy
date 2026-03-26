@@ -19,3 +19,10 @@ screen bathroom_screen:
         action [Notify("You took a shower! Hygiene +20") ,
         SetVariable("hygiene",100 if hygiene + 20 >= 100 else hygiene + 20),
         Function(advanceTime), Jump("kitchen")]
+    
+    imagebutton:
+        idle im.Scale("images/reny/bathroom/idle.png", 400, 1000)
+        hover im.Scale("images/reny/bathroom/hover.png", 400, 1000)
+        xcenter 0.23
+        yalign 0.9
+        action Notify("HI!")
