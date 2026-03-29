@@ -8,5 +8,7 @@ label travelMap(imagePath):
             jump kitchen
         "Go to the bedroom" if imagePath != "bedroom":
             jump bedroom
+        "Go to Reny's room" if imagePath != "reny_bedroom":
+            jump reny_bedroom
         "Stay here":
             jump expression imagePath

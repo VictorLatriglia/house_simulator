@@ -8,6 +8,7 @@ define e = Character("Eileen")
 image bg bedroom = "images/house/bedroom.png"
 image bg bathroom = "images/house/bathroom.png"
 image bg kitchen = "images/house/kitchen.png"
+image bg reny_bedroom = "images/house/renys_room.png"
 
 define hygiene = 0
 define hunger = 100

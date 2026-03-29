@@ -18,3 +18,10 @@ screen kitchen_screen:
         action [Notify("You ate some food! Hunger -20") ,
             SetVariable("hunger", 0 if hunger - 20 <= 0 else hunger - 20),
             Function(advanceTime), Jump("kitchen")]
+
+    imagebutton:
+        idle "images/reny/kitchen/idle_light.png"
+        hover "images/reny/kitchen/hover_light.png"
+        xalign 0.85
+        yalign 0.6
+        action Notify("HI!")
