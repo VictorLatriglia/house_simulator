@@ -20,6 +20,51 @@ define tint = "#fff8b6"
 define daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 define timesOfDay = ["Morning", "Afternoon", "Evening", "Night"]
 
+define reny_schedule = {
+    "Monday": {
+        "Morning": "kitchen",
+        "Afternoon": "reny_bedroom",
+        "Evening": "bathroom",
+        "Night": "reny_bedroom"
+    },
+    "Tuesday": {
+        "Morning": "bathroom",
+        "Afternoon": "kitchen",
+        "Evening": "reny_bedroom",
+        "Night": "reny_bedroom"
+    },
+    "Wednesday": {
+        "Morning": "reny_bedroom",
+        "Afternoon": "bathroom",
+        "Evening": "kitchen",
+        "Night": "reny_bedroom"
+    },
+    "Thursday": {
+        "Morning": "kitchen",
+        "Afternoon": "reny_bedroom",
+        "Evening": "bathroom",
+        "Night": "reny_bedroom"
+    },
+    "Friday": {
+        "Morning": "bathroom",
+        "Afternoon": "kitchen",
+        "Evening": "reny_bedroom",
+        "Night": "reny_bedroom"
+    },
+    "Saturday": {
+        "Morning": "reny_bedroom",
+        "Afternoon": "bathroom",
+        "Evening": "kitchen",
+        "Night": "reny_bedroom"
+    },
+    "Sunday": {
+        "Morning": "kitchen",
+        "Afternoon": "reny_bedroom",
+        "Evening": "bathroom",
+        "Night": "reny_bedroom"
+    }
+}
+
 # The game starts here.
 
 transform ambient_light:

@@ -1,4 +1,3 @@
-
 label bedroom:
     
     show bg bedroom at ambient_light #at ambient_light
