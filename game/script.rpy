@@ -3,7 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define reny = Character("Reny", color="#c8ffc8")
+image reny default = "images/reny/conversation/default.png"
+image reny goofy = "images/reny/conversation/goofy.png"
+image reny thinking = "images/reny/conversation/thinking.png"
 
 image bg bedroom = "images/house/bedroom.png"
 image bg bathroom = "images/house/bathroom.png"

@@ -18,4 +18,22 @@ screen reny_bedroom_screen:
             hover "images/reny/reny_bedroom/hover.png"
             xcenter 0.35
             yalign 0.70
-            action Notify("HI!")
+            action [Jump("reny_bedroom_interaction")]
+
+label reny_bedroom_interaction:
+    "You see Reny sitting on her bed, looking at her phone. She seems to be in a good mood, smiling at something on her screen."
+    show reny default
+    reny "Oh, hey there! I didn't see you come in. I'm just catching up on some messages. How's your day going?"
+
+    menu:
+        "Ask about her day":
+            reny "It's been pretty good! I had a nice breakfast and then just relaxed for a bit. How about you?"
+        "Compliment her outfit":
+            show reny goofy
+            reny "Aww, thanks! I just threw this on this morning. I'm glad you like it!"
+        "Say goodbye":
+            show reny thinking
+            reny "Alright, see you around! Let me know if you want to hang out later."
+    "You have a nice chat with Reny before she goes back to looking at her phone. You feel like you got to know her a little better."
+    hide reny
+    jump reny_bedroom
